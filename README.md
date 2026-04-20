@@ -65,9 +65,13 @@ Key HTML concepts used:
  Sitemap
 
  Home (index.html)
+ 
  Games (games.html)
+ 
 Pricing (pricing.html)
+
 Contact (contact.html)
+
 Form (form.html)
 
 
