@@ -35,6 +35,7 @@ Website Goals and Objectives
 Timeline and Milestones
 
 | Part | Focus | Due Date | Status |
+
  Part 1  HTML Structure  20 April 2025  Complete 
  Part 2  CSS Styling  29 May 2025  Pending
 Part 3  JavaScript TBC  Pending 
