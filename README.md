@@ -1,4 +1,4 @@
- WEDO5020-POE-Part-1
+ WEDO5020-POE-
 Diepkloof Gaming Lounge Website
 
 Student Information
