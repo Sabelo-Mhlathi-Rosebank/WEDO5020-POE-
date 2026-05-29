@@ -38,12 +38,12 @@ Timeline and Milestones
 
  Part 1  HTML Structure  20 April 2025  Complete 
  
- Part 2  CSS Styling  29 May 2025  Pending
+ Part 2  CSS Styling  29 May 2025  Complete
  
 Part 3  JavaScript TBC  Pending 
 
 
-Part 1 Details
+PART 1 DETAILS
 Focus: HTML only, no CSS or JavaScript
 
 Pages created:
@@ -75,7 +75,55 @@ Contact (contact.html)
 Form (form.html)
 
 
- Changelog
+
+ PART 2 DETAILS
+Focus: CSS styling, removing all HTML inline styling
+
+CSS file:style.css linked to all five pages
+
+Key CSS concepts used:
+
+- Google Fonts import for Orbitron and Rajdhani typefaces
+- CSS reset using universal selector for consistent spacing
+- Background image with fixed attachment and dark overlay using body::before
+- Flexbox for navbar, card layouts and gallery
+- Sticky header with z-index layering
+- rgba colours for transparent card backgrounds
+- Hover effects and transitions on buttons, cards and navbar links
+- Transform translateY for card lift effect on hover
+- Box-shadow for red glow effect on hover
+- Responsive form styling with full width inputs
+- Table styling with dark red header rows
+- Three breakpoints using media queries: desktop, tablet (768px), mobile (480px)
+- Navbar stacks vertically on mobile using flex-direction column
+- Cards switch to single column layout on mobile
+- Font sizes scale down progressively on smaller screens
+- Responsive images using srcset and sizes attributes
+- rem and em units used throughout for font sizes and spacing
+- Percentage based widths for responsive layouts
+
+Changes from Part 1:
+- Removed all bgcolor, font color, center and align attributes
+- Replaced table based navbar with CSS flexbox nav
+- Replaced table based card layouts with CSS flex containers
+- Replaced br tags used for spacing with CSS margin and padding
+- Replaced hr dividers with CSS border and section spacing
+- All colours, spacing and typography moved to stylesheet
+
+New files added:
+- style.css - main stylesheet
+
+Responsive design breakpoints:
+
+ Breakpoint  Screen Size Changes Applied 
+
+Desktop  Above 768px  Full multi-column layout, large fonts 
+Tablet  768px and below  Two column cards, reduced font sizes 
+Mobile  480px and below  Single column layout, stacked navbar 
+
+
+ 
+ CHANGELOG
 
 Version 1.0 - Part 1 (20 April 2025)
 - Created initial five page HTML structure
@@ -85,8 +133,47 @@ Version 1.0 - Part 1 (20 April 2025)
 - Embedded Google Maps on contact page
 - Built pricing tables and game listings
 
+ Version 2.0 - Part 2 (29 May 2025)
+ CSS Stylesheet Added
+- Created style.css and linked to all five pages
+- Removed all HTML inline styling attributes including bgcolor, 
+  font color, center tags and align attributes
 
-References
+Typography
+- Imported Google Fonts: Orbitron for headings, Rajdhani for body text
+- Converted all font sizes to rem units for consistency
+- Added letter spacing to headings and navbar links
+
+ Layout
+- Replaced table based navbar with CSS flexbox nav
+- Replaced table based card layouts with CSS flex containers
+- Added sticky header that stays at top when scrolling
+- Added max-width constraints on sections and form
+
+ Visual Design
+- Applied space background image with fixed attachment
+- Added dark overlay using body::before for text readability
+- Added red accent borders on cards, form and tables
+- Added hover effects on navbar links and buttons
+- Added card lift effect using transform translateY on hover
+- Added red glow effect using box-shadow on hover
+- Styled form inputs, textareas and select dropdowns
+- Added dark red header row styling on tables
+
+ Responsive Design
+- Implemented three breakpoints: desktop, tablet (768px), mobile (480px)
+- Navbar stacks vertically on mobile screens
+- Cards and gallery items switch to single column on mobile
+- Font sizes reduce progressively on smaller screens
+- Iframe map resizes for tablet and mobile
+- Added srcset and sizes attributes to all images for responsive loading
+
+ New Files Added
+- style.css - main stylesheet
+
+ 
+
+REFERENCES
 
 Freepik (2025) 3D space sky background image. Available at:
 https://www.freepik.com/free-photo/3d-space-sky-background_3267756.htm
@@ -117,5 +204,13 @@ https://fonts.google.com
 (Accessed: 02 April 2025).
 
 Google (2025) Google Maps. Available at:
+
+Google (2025) Google Fonts: Orbitron. Available at:
+https://fonts.google.com/specimen/Orbitron
+(Accessed: 02 May 2025).
+
+Google (2025) Google Fonts: Rajdhani. Available at:
+https://fonts.google.com/specimen/Rajdhani
+(Accessed: 02 May 2025).
 https://maps.google.com
 (Accessed: 02 April 2025).
