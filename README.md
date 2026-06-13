@@ -40,7 +40,7 @@ Timeline and Milestones
  
  Part 2  CSS Styling  29 May 2025  Complete
  
-Part 3  JavaScript TBC  Pending 
+Part 3  JavaScript  13 June  Complete
 
 
 PART 1 DETAILS
@@ -121,6 +121,83 @@ Desktop  Above 768px  Full multi-column layout, large fonts
 Tablet  768px and below  Two column cards, reduced font sizes 
 Mobile  480px and below  Single column layout, stacked navbar 
 
+ Part 3 Details
+Focus:JavaScript interactivity, SEO, form functionality and validation
+
+JavaScript files added:
+- animations.js - runs across all pages
+- index.js - homepage specific
+- games.js - games page specific
+- contact.js - contact page specific
+- form.js - booking form specific
+- pricing.js - pricing page specific
+- search.js - search results page specific
+
+Key JavaScript concepts used:
+- DOM manipulation to dynamically update page content
+- Event listeners for click, input, change and scroll events
+- localStorage to persist data across pages and sessions
+- IntersectionObserver API for scroll fade in animations
+- setInterval for live countdown timer
+- URLSearchParams to read search queries from the URL
+- Form validation with real time error messages
+- EmailJS integration for sending emails from the browser
+- Leaflet.js for interactive map rendering
+
+Features implemented:
+
+| Feature | Page | Description |
+
+| Form validation | form.html | Validates all fields before submission |
+| EmailJS booking form | form.html | Sends booking details to email |
+| EmailJS contact form | contact.html | Sends general messages to email |
+| Lightbox gallery | games.html | Click images to view in larger overlay |
+| Game search filter | games.html | Real time filter of game listings |
+| Tournament countdown | index.html | Live countdown to next tournament |
+| Session cost calculator | pricing.html | Calculates cost by platform and duration |
+| Accordion FAQ | pricing.html | Expandable frequently asked questions |
+| Leaflet interactive map | contact.html | Zoomable map with location marker |
+| Dynamic content loading | games.html | Load more games button |
+| Scroll animations | all pages | Sections fade in on scroll |
+| Back to top button | all pages | Appears after 300px scroll |
+| Dark/light mode toggle | all pages | Theme preference saved in localStorage |
+| Cookie consent banner | all pages | Accept or decline with localStorage |
+| Tournament registration | games.html | Register and store entries in localStorage |
+| Animated loading screen | all pages | Progress bar on page load |
+| Character counter | contact.html | Live count with colour warnings |
+| Session builder | pricing.html | Build and store session in localStorage |
+| Global search | all pages | Search across all site content |
+| 404 error page | 404.html | Custom page not found |
+
+SEO implemented:
+- Meta charset, viewport, description, keywords and author on all pages
+- Descriptive title tags on all pages
+- robots.txt instructing search engine crawlers
+- sitemap.xml listing all pages with last modified dates
+- Descriptive alt text on all images
+- Semantic HTML structure with proper heading hierarchy
+
+Form functionality:
+- Client side validation on both forms
+- Real time error messages displayed below fields
+- Email format validation using regex
+- Phone number format validation using regex
+- EmailJS used for AJAX style form submission without page reload
+- Success message displayed on successful submission
+- Form resets after successful submission
+- Booking form pre-fills from session builder selections
+
+New files added:
+- animations.js
+- index.js
+- games.js
+- contact.js
+- form.js
+- pricing.js
+- search.js
+- search.html
+- 404.html
+- print.css
 
  
  CHANGELOG
@@ -171,7 +248,49 @@ Typography
  New Files Added
 - style.css - main stylesheet
 
- 
+ Part 3 Changelog
+
+ Version 3.0 - Part 3 (13 June 2026)
+
+ SEO
+- Added meta charset, viewport, description, keywords and author to all pages
+- Created robots.txt to guide search engine crawlers
+- Created sitemap.xml listing all five pages
+
+ Form Functionality
+- Added JavaScript validation to booking form with error messages
+- Added JavaScript validation to contact form with error messages
+- Integrated EmailJS to send booking form details to email
+- Integrated EmailJS to send contact form messages to email
+- Added success message on form submission
+- Added pre-fill functionality from session builder to booking form
+
+ Interactive Elements
+- Added lightbox gallery on games page
+- Added accordion FAQ section on pricing page
+- Replaced Google Maps iframe with Leaflet interactive map on contact page
+- Added global search bar in navbar linking to search results page
+
+Dynamic Content
+- Added load more games button on games page
+- Added tournament registration system with localStorage on games page
+- Added session builder with localStorage on pricing page
+- Added global search results page
+
+ Animations and Transitions
+- Added scroll fade in animations using IntersectionObserver on all pages
+- Added animated loading screen with progress bar on all pages
+- Added navbar scroll effect that intensifies on scroll
+
+ Additional Features
+- Added back to top button on all pages
+- Added dark/light mode toggle with localStorage on all pages
+- Added cookie consent banner with localStorage on all pages
+- Added live character counter on contact form message field
+- Added session cost calculator on pricing page
+- Added tournament countdown timer on homepage
+- Added custom 404 error page
+- Added print stylesheet for pricing page
 
 REFERENCES
 
@@ -214,3 +333,16 @@ https://fonts.google.com/specimen/Rajdhani
 (Accessed: 02 May 2025).
 https://maps.google.com
 (Accessed: 02 April 2025).
+
+EmailJS (2026) *EmailJS Browser SDK*. Available at:
+https://www.emailjs.com
+(Accessed: 09 June 2026).
+
+Leaflet (2026) *Leaflet: an open-source JavaScript library for 
+mobile-friendly interactive maps*. Available at:
+https://leafletjs.com
+(Accessed: 09 June 2026).
+
+OpenStreetMap (2026) *OpenStreetMap*. Available at:
+https://www.openstreetmap.org
+(Accessed: 09 June 2026).
